@@ -72,11 +72,11 @@ rgw:
 
 # If mcg enabled is set to False Nooba/Multicloud gateway will not be deployed.
 mcg:
-  enabled: true
+  enabled: false
 
 # Deploy CephTools with ODF
 cephtools:
-  enabled: true
+  enabled: false
 
 # If OCP Cluster is deployed in AWS and dedicated option enabled it will deploy 3 ODF workers(m5.4xlarge) using machinesets one per AZ, .
 dedicated: 
@@ -101,7 +101,7 @@ osds:
   encryption:
     enabled: false
 #Number of replicas for the device set configuration. Set to 3 by default.
-#  replicas: 3
+  replicas: 1
 #Storage Class that will be used to provision the ODF OSDs. If using LSO set it to 'localblock'
   scname: 'thin'
 #Size of Each PV that will be provisioned to be used by the OSDs.
