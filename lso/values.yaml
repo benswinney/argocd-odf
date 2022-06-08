@@ -11,4 +11,4 @@ lso:
 # Number of discovered devices to use per node
   devicecount: 1
 # Type of device to use, ignore Rotational Disks
-  type: NonRotational
+  type: Rotational

@@ -7,12 +7,12 @@ helmRepoUrl: https://github.com/benswinney/argocd-odf
 
 # ArgoCD apps definition
 apps:
-  deploy-odf:
-    branch: main
-    enabled: false
-    path: odf/
-    autosync: true
-    namespace: openshift-storage
+  #deploy-odf:
+  #  branch: main
+  #  enabled: false
+  #  path: odf/
+  #  autosync: true
+  #  namespace: openshift-storage
   deploy-lso:
     branch: main
     enabled: false
