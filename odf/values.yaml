@@ -31,17 +31,17 @@ odf:
   noobaacore:
     limits:
       cpu: 1
-      memory: 2Gi
+      memory: 1Gi
     requests:
       cpu: 1
-      memory: 2Gi
+      memory: 1Gi
   noobaadb:
     limits:
       cpu: 1
-      memory: 2Gi
+      memory: 1Gi
     requests:
       cpu: 1
-      memory: 2Gi
+      memory: 1Gi
   osd:
     requests:
       cpu: 2
