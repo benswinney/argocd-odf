@@ -23,11 +23,11 @@ odf:
   mds:
     requests:
       cpu: 3
-      memory: 8Gi
+      memory: 6Gi
   mgr:
     requests:
       cpu: 1
-      memory: 3Gi
+      memory: 2Gi
   noobaacore:
     limits:
       cpu: 1
@@ -45,17 +45,17 @@ odf:
   osd:
     requests:
       cpu: 2
-      memory: 5Gi
+      memory: 4Gi
     limits:
       cpu: 3
-      memory: 7Gi
+      memory: 5Gi
   rgw:
     requests:
       cpu: 1
-      memory: 4Gi
+      memory: 3Gi
     limits:
       cpu: 2
-      memory: 4Gi
+      memory: 3Gi
 
 
 
