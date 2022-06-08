@@ -19,6 +19,12 @@ apps:
     path: lso/
     autosync: true
     namespace: openshift-local-storage
+  deploy-mcg:
+    branch: main
+    enabled: true
+    path: mcg/
+    autosync: true
+    namespace: openshift-storage
 namespaces:
   - openshift-local-storage
   - openshift-storage
