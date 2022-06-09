@@ -9,20 +9,31 @@ helmRepoUrl: https://github.com/benswinney/argocd-odf
 apps:
   deploy-odf:
     branch: main
-    enabled: true 
+    enabled: false
     path: odf/
     autosync: true
     namespace: openshift-storage
   deploy-lso:
     branch: main
-    enabled: true
+    enabled: false
     path: lso/
     autosync: true
     namespace: openshift-local-storage
+# if deploy-mcg app is enabled Argocd app called deploy-mcg will get created in
+# openshift-gitops argocd instance, autosync is disable by default.
   deploy-mcg:
     branch: main
     enabled: false
     path: mcg/
+    autosync: true 
+    namespace: openshift-storage
+# If deploy-lvmo is enable logical volume operator argocd app will get created
+# in openshift-gitops argocd instance, current lvmo version will use all disks
+# available in the SNO node. autosync is disable by default.
+  deploy-lvmo:
+    branch: main
+    enabled: true
+    path: lvmo/
     autosync: true
     namespace: openshift-storage
 namespaces:
