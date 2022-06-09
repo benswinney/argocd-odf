@@ -9,7 +9,7 @@ helmRepoUrl: https://github.com/benswinney/argocd-odf
 apps:
   deploy-odf:
     branch: main
-    enabled: false 
+    enabled: true 
     path: odf/
     autosync: true
     namespace: openshift-storage
@@ -21,7 +21,7 @@ apps:
     namespace: openshift-local-storage
   deploy-mcg:
     branch: main
-    enabled: true
+    enabled: false
     path: mcg/
     autosync: true
     namespace: openshift-storage

@@ -43,6 +43,15 @@ spec:
   monDataDirHostPath: /var/lib/rook
   {{- end }}
   nodeTopologies: {}
+  mon:
+    count: 1
+    allowMultiplePerNode: true
+  mds:
+    count: 1
+    allowMultiplePerNode: true
+  mgr:
+    count: 1
+    allowMultiplePerNode: true 
   resources:
     mon:
       requests:
